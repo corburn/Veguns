@@ -1,0 +1,13 @@
+# action.yml
+name: 'cwltool'
+description: 'TODO'
+#inputs:
+#  cmd:
+#    description: 'TODO'
+#    required: true
+#    default: 'cwltool ensemblBacteriaUniProtVgExample/ensembl_genomes_to_variation_graph_with_uniprot_annotation_rdf.cwl --my_ncbiTaxid 83333 --my_baseuri http://example.org/vg83333/'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+#  args:
+#    - ${{ inputs.cmd }}

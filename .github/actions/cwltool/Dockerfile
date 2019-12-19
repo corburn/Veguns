@@ -1,9 +1,9 @@
-#FROM alpine:3.10
 FROM python:3-alpine
 
 # The error was: cwltool requires Node.js engine to evaluate and validate Javascript
 # expressions, but couldn't find it.  Tried nodejs, node, docker run node:slim
 RUN apk add --no-cache \
+  curl \
   gcc \
   libxml2-dev \
   libxslt-dev \
